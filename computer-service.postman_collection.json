@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "e14dbf28-3f87-4e72-8841-5ceab9c8d3aa",
+		"name": "computer-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21056224"
+	},
+	"item": [
+		{
+			"name": "GetAllProducts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serialNumber\" : 12534,\r\n    \"producer\" : \"kakoi-to\",\r\n    \"price\" : 1234,\r\n    \"amount\" : 5,\r\n    \"memorySize\" : 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/hdds/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hdds",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serialNumber\" : 1234,\r\n    \"producer\" : \"drugoi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/hdds/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hdds",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
